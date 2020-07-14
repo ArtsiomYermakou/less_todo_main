@@ -7,7 +7,8 @@ import {AppBar, Button, Container, Grid, IconButton, Toolbar, Typography, Paper}
 import {Menu} from "@material-ui/icons";
 
 export type FilterValuesType = "all" | "active" | "completed";
-type TodolistType = {
+
+export type TodolistType = {
     id: string
     title: string
     filter: FilterValuesType
@@ -21,7 +22,6 @@ let elementPadding:CSSProperties = {
     padding: "15px",
     margin: "15px"
 }
-
 
 function App() {
     function removeTask(id: string, todolistId: string) {
@@ -66,6 +66,7 @@ function App() {
     function removeTodolist(id: string) {
         setTodolists(todolists.filter(tl => tl.id != id));
         delete tasks[id];
+        setTasks({...tasks});
     }
 
     function changeTodolistTitle(id: string, title: string) {
@@ -76,22 +77,23 @@ function App() {
         }
     }
 
-    let todolistId1 = v1();
-    let todolistId2 = v1();
+    let todoListID1 = v1();
+    let todoListID2 = v1();
 
     let [todolists, setTodolists] = useState<Array<TodolistType>>([
-        {id: todolistId1, title: "What to learn", filter: "all"},
-        {id: todolistId2, title: "What to buy", filter: "all"}
+        {id: todoListID1, title: "Books", filter: "all"},
+        {id: todoListID2, title: "Songs", filter: "all"}
     ])
 
     let [tasks, setTasks] = useState<TasksStateType>({
-        [todolistId1]: [
+        [todoListID1]: [
             {id: v1(), title: "HTML&CSS", isDone: false},
-            {id: v1(), title: "JS", isDone: true}
+            {id: v1(), title: "JS", isDone: true},
+            {id: v1(), title: "Redux", isDone: false},
         ],
-        [todolistId2]: [
-            {id: v1(), title: "Milk", isDone: false},
-            {id: v1(), title: "React Book", isDone: true}
+        [todoListID2]: [
+            {id: v1(), title: "RestAPI", isDone: false},
+            {id: v1(), title: "GraphQL", isDone: true}
         ]
     });
 

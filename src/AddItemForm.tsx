@@ -42,17 +42,10 @@ export function AddItemForm(props: AddItemFormPropsType) {
             helperText={error}
             // className={error ? "error" : ""}
         />
-        {/*<input*/}
-        {/*    value={title}*/}
-        {/*    onChange={onChangeHandler}*/}
-        {/*    onKeyPress={onKeyPressHandler}*/}
-        {/*    className={error ? "error" : ""}*/}
-        {/*/>*/}
+
         <IconButton onClick={onAddItemClick} color={"primary"}>
             <AddBox/>
         </IconButton>
-        {/*<Button onClick={onAddItemClick} variant={"contained"} color={"primary"}>+</Button>*/}
-        {/*<button onClick={onAddItemClick}>+</button>*/}
-        {/*{error && <div className="error-message">{error}</div>}*/}
+
     </div>
 }
