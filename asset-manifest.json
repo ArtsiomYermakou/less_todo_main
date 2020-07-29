@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/less_todo_main/static/css/main.27fd15f6.chunk.css",
-    "main.js": "/less_todo_main/static/js/main.9ae067af.chunk.js",
-    "main.js.map": "/less_todo_main/static/js/main.9ae067af.chunk.js.map",
+    "main.js": "/less_todo_main/static/js/main.fab2f418.chunk.js",
+    "main.js.map": "/less_todo_main/static/js/main.fab2f418.chunk.js.map",
     "runtime-main.js": "/less_todo_main/static/js/runtime-main.1cb63532.js",
     "runtime-main.js.map": "/less_todo_main/static/js/runtime-main.1cb63532.js.map",
-    "static/js/2.37b5ca8b.chunk.js": "/less_todo_main/static/js/2.37b5ca8b.chunk.js",
-    "static/js/2.37b5ca8b.chunk.js.map": "/less_todo_main/static/js/2.37b5ca8b.chunk.js.map",
+    "static/js/2.9fa58a99.chunk.js": "/less_todo_main/static/js/2.9fa58a99.chunk.js",
+    "static/js/2.9fa58a99.chunk.js.map": "/less_todo_main/static/js/2.9fa58a99.chunk.js.map",
     "index.html": "/less_todo_main/index.html",
-    "precache-manifest.869fd8a78709f4d6670afcc39aad4bb6.js": "/less_todo_main/precache-manifest.869fd8a78709f4d6670afcc39aad4bb6.js",
+    "precache-manifest.dfe0758bed098c018366b588a8c7aa42.js": "/less_todo_main/precache-manifest.dfe0758bed098c018366b588a8c7aa42.js",
     "service-worker.js": "/less_todo_main/service-worker.js",
     "static/css/main.27fd15f6.chunk.css.map": "/less_todo_main/static/css/main.27fd15f6.chunk.css.map",
-    "static/js/2.37b5ca8b.chunk.js.LICENSE.txt": "/less_todo_main/static/js/2.37b5ca8b.chunk.js.LICENSE.txt"
+    "static/js/2.9fa58a99.chunk.js.LICENSE.txt": "/less_todo_main/static/js/2.9fa58a99.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.1cb63532.js",
-    "static/js/2.37b5ca8b.chunk.js",
+    "static/js/2.9fa58a99.chunk.js",
     "static/css/main.27fd15f6.chunk.css",
-    "static/js/main.9ae067af.chunk.js"
+    "static/js/main.fab2f418.chunk.js"
   ]
 }
