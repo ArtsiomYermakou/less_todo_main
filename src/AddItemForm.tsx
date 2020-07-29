@@ -1,52 +1,46 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from "react";
-import {IconButton, TextField} from "@material-ui/core";
-import {AddBox} from "@material-ui/icons";
+import {Button, IconButton, TextField} from "@material-ui/core";
+import {ControlPoint} from "@material-ui/icons";
 
-export type AddItemFormType = {
+type AddItemFormPropsType = {
     addItem: (title: string) => void
 }
 
-export const AddItemForm = (props: AddItemFormType) => {
-
-
-    let [title, setTitle] = useState<string>("")
+export function AddItemForm(props: AddItemFormPropsType) {
+    let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
 
-    const onTitleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setTitle(e.currentTarget.value)
-        setError(null)
     }
-    const onAddItemClick = () => {
-        if (title.trim() !== '') {
-            props.addItem(title);
-        } else {
-            setError("title is required")
-        }
-        setTitle("");
-    }
-    const onKeyPressItemTask = (e: KeyboardEvent) => {
+
+    const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+        setError(null);
         if (e.charCode === 13) {
-            onAddItemClick()
+            addTask();
         }
     }
 
+    const addTask = () => {
+        if (title.trim() !== "") {
+            props.addItem(title.trim());
+            setTitle("");
+        } else {
+            setError("Title is required");
+        }
+    }
     return (
-        <div onBlur={() => {
-            setError(null)
-        }}>
-            <TextField
-                variant={"outlined"}
-                value={title}
-                onChange={onTitleChange}
-                onKeyPress={onKeyPressItemTask}
-                error={!!error}
-                label={"Title"}
-                helperText={error}
+        <div>
+            <TextField value={title}
+                       variant={"outlined"}
+                       label={"Type value"}
+                       onChange={onChangeHandler}
+                       onKeyPress={onKeyPressHandler}
+                       error={!!error}
+                       helperText={error}
             />
-            <IconButton
-                color={"primary"}
-                onClick={onAddItemClick}>
-                <AddBox/>
+            <IconButton onClick={addTask} color={"primary"}>
+                <ControlPoint />
             </IconButton>
         </div>
     )
