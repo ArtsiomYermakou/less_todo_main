@@ -2,7 +2,7 @@
   "name": "it-incubator-todolist-ts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artsiomyermakou.github.io/less_todo_main",
+  "homepage": "https://artsiomyermakou.github.io/less_todo_main/",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
