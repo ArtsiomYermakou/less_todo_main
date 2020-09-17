@@ -2,9 +2,8 @@
   "name": "it-incubator-todolist-ts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://artsiomyermakou.github.io/less_todo_main",
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
+    "@material-ui/core": "^4.10.1",
     "@material-ui/icons": "^4.9.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -14,26 +13,25 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "@types/react-redux": "^7.1.9",
-    "@types/uuid": "^8.0.0",
-    "gh-pages": "^3.1.0",
+    "@types/uuid": "^7.0.3",
+    "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-redux": "^7.2.1",
+    "react-redux": "^7.2.0",
     "react-scripts": "3.4.1",
     "redux": "^4.0.5",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "uuid": "^8.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build",
-    "storybook": "start-storybook -p 6006 -s public",
+    "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
     "jest:integration": "jest -c integration/jest.config.js",
-    "test:integration": "start-server-and-test storybook http-get://localhost:6006 jest:integration"
+    "test:integration": "start-server-and-test storybook http-get://localhost:9009 jest:integration"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -51,19 +49,15 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.11.1",
-    "@storybook/addon-actions": "^6.0.4",
-    "@storybook/addon-essentials": "^6.0.4",
-    "@storybook/addon-links": "^6.0.4",
-    "@storybook/addon-storysource": "^6.0.4",
-    "@storybook/node-logger": "^6.0.4",
-    "@storybook/preset-create-react-app": "^3.1.4",
-    "@storybook/react": "^6.0.4",
-    "babel-loader": "^8.1.0",
-    "jest-image-snapshot": "^4.1.0",
+    "@storybook/addon-actions": "^5.3.19",
+    "@storybook/addon-links": "^5.3.19",
+    "@storybook/addon-storysource": "^5.3.19",
+    "@storybook/addons": "^5.3.19",
+    "@storybook/preset-create-react-app": "^3.1.3",
+    "@storybook/react": "^5.3.19",
+    "jest-image-snapshot": "^4.0.2",
     "jest-puppeteer": "^4.4.0",
-    "puppeteer": "^5.2.1",
-    "react-is": "^16.13.1",
-    "start-server-and-test": "^1.11.3"
+    "puppeteer": "^5.1.0",
+    "start-server-and-test": "^1.11.2"
   }
 }
