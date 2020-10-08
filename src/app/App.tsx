@@ -16,7 +16,7 @@ import {ErrorSnackbar} from '../components/ErrorSnackbar/ErrorSnackbar'
 import {useDispatch, useSelector} from 'react-redux'
 import {AppRootStateType} from './store'
 import {initializeAppTC, RequestStatusType} from './app-reducer'
-import {Route, Switch, Redirect} from 'react-router-dom'
+import {Route, Switch} from 'react-router-dom'
 import {Login} from "../features/login/Login";
 import {logoutTC} from "../features/login/auth-reducer";
 
@@ -52,7 +52,7 @@ function App({demo = false}: PropsType) {
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" color="inherit" aria-label="menu">
-                        <Menu />
+                        <Menu/>
                     </IconButton>
                     <Typography variant="h6">
                         News
@@ -64,6 +64,9 @@ function App({demo = false}: PropsType) {
             <Container fixed>
                 <Switch>
                     <Route exact path={"/login"} render={() => <Login/>}/>
+                    <Route exact path={"/less_todo_main"} render={() => <TodolistsList demo={demo}/>}/>
+                    <Route exact path={"/less_todo_main/"} render={() => <TodolistsList demo={demo}/>}/>
+                    <Route exact path={"/"} render={() => <TodolistsList demo={demo}/>}/>
                     <Route exact path={"/"} render={() => <TodolistsList demo={demo}/>}/>
                     {/*<Route exact path={"/404"} render={() => <h1>404</h1>}/>*/}
                     {/*<Redirect from={"*"} to={"/404"}/>*/}
