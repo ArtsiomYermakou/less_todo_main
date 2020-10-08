@@ -62,14 +62,12 @@ function App({demo = false}: PropsType) {
                 {status === 'loading' && <LinearProgress/>}
             </AppBar>
             <Container fixed>
-
                 <Switch>
+                    <Route exact path={"/login"} render={() => <Login/>}/>
                     <Route exact path={"/"} render={() => <TodolistsList demo={demo}/>}/>
-                    <Route path={"/login"} render={() => <Login/>}/>
-                    {/*<Route path={"/404"} render={() => <h1>404</h1>}/>*/}
-                    {/*<Redirect from={"*"} to={"/404"}/>*/}
+                    <Route exact path={"/404"} render={() => <h1>404</h1>}/>
+                    <Redirect from={"*"} to={"/404"}/>
                 </Switch>
-
             </Container>
         </div>
     )
