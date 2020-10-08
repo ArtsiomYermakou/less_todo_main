@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "deedf22e490349cebd762c736f06c51f",
+    "revision": "685e4738f4377b6ecffb3f74e99068d2",
     "url": "/less_todo_main/index.html"
   },
   {
-    "revision": "3c1b2bfef58b619f43eb",
+    "revision": "8f9373a368be12bcc525",
     "url": "/less_todo_main/static/css/main.aa207b39.chunk.css"
   },
   {
-    "revision": "67ffd63487e0b7c4fe85",
-    "url": "/less_todo_main/static/js/2.fbb6cfb4.chunk.js"
+    "revision": "c6ffae505477bd366c4c",
+    "url": "/less_todo_main/static/js/2.5bf4bb0f.chunk.js"
   },
   {
     "revision": "e2896a34bc173bbd7b6d83453e91d5e1",
-    "url": "/less_todo_main/static/js/2.fbb6cfb4.chunk.js.LICENSE.txt"
+    "url": "/less_todo_main/static/js/2.5bf4bb0f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3c1b2bfef58b619f43eb",
-    "url": "/less_todo_main/static/js/main.348fbbc8.chunk.js"
+    "revision": "8f9373a368be12bcc525",
+    "url": "/less_todo_main/static/js/main.a32c6cfe.chunk.js"
   },
   {
     "revision": "55f03d12a8be3d2a5b63",
