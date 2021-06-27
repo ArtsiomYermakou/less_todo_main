@@ -12,13 +12,13 @@ import {
 } from '@material-ui/core'
 import {Menu} from '@material-ui/icons'
 import {TodolistsList} from '../features/TodolistsList/TodolistsList'
-import {ErrorSnackbar} from '../components/ErrorSnackbar/ErrorSnackbar'
+import {ErrorSnackbar} from '../components/ErrorSnackBar/ErrorSnackBar'
 import {useDispatch, useSelector} from 'react-redux'
 import {AppRootStateType} from './store'
 import {initializeAppTC, RequestStatusType} from './app-reducer'
 import {Route, Switch} from 'react-router-dom'
-import {Login} from "../features/login/Login";
-import {logoutTC} from "../features/login/auth-reducer";
+import {Login} from "../features/Login/Login";
+import {logoutTC} from "../features/Login/auth-reducer";
 
 type PropsType = {
     demo?: boolean
